@@ -1,0 +1,93 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+body {
+  position: relative;
+  text-align: center;
+}
+  a {
+    /* 앵커 태그의 text 스타일을 없앤다. */
+    text-decoration: none;
+    /* 글자색 설정 */
+    color: purple;
+  }
+ 
+  /* header 태그 안에 CSS 속성 */
+  header {
+    height: 70px;
+    /* 배경색 설정 */
+    background-color: white;
+    /* 글자색 설정 */
+    color: purple;
+    line-height: 70px;
+    padding: 0px 30px;
+  
+  }
+  
+  /* header의 내용에 들어갈 클래스 선택자. html 파일 참고 */
+  .header-nav {
+    /* 수평 요소 동적 크기 구성을 위한 css 속성 */
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .nav-menu {
+    margin-right: 10px;
+  }
+  main {
+
+  text-align: center;
+}
+  .item {
+    width: 100%;
+    /* max-height: 100%; */
+    position: relative;
+    overflow: hidden;
+  }
+  .content > img {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: block;
+    object-fit: cover;
+  }
+  .form {
+
+    background: #ffffff;
+    width: 75%;
+    height: 15px;
+    padding:30px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    box-sizing: content-box;
+    font-size: 14px;
+  }
+
+  
+  .video-list {
+    width: 75%;
+   
+    margin: auto;
+    text-align:left;
+  }
+  .container {
+    display: flex;
+    /* 안의 내용이 밖으로 빠져나가는것을 방지 */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+  }
+  

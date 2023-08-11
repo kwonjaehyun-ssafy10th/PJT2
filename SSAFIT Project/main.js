@@ -26,8 +26,9 @@ let videoList = [
       "part": "상체",
       "channelName": "ThankyouBUBU",
       "url": "https://www.youtube.com/embed/QqqZH3j_vH0"
-    },
-    {
+    }]
+    let videoList2 =
+    [{
       "id": "tzN6ypk6Sps",
       "title": "하체운동이 중요한 이유? 이것만 보고 따라하자 ! [하체운동 교과서]",
       "part": "하체",
@@ -66,5 +67,14 @@ videoList.forEach((video)=> {
     `
 })
 
+let videoHtml2 = "";
+
+videoList2.forEach((video)=> {
+  videoHtml2 += `
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/${video.id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  `
+})
+
 
 document.querySelector("#video-area").innerHTML = videoHtml
+document.querySelector("#video-area2").innerHTML = videoHtml2
