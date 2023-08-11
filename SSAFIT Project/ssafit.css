@@ -40,21 +40,25 @@ body {
     margin-right: 10px;
   }
   main {
-
+    margin-top: 300px;
   text-align: center;
 }
-  .item {
+  .container {
     width: 100%;
     /* max-height: 100%; */
-    position: relative;
-    overflow: hidden;
+    position: absolute;
+display: block;
+   
+    /* flex-grow:  */
+    
   }
-  .content > img {
+  .container > img {
     position: absolute;
     width: 100%;
-    text-align: center;
+
     display: block;
-    object-fit: cover;
+   
+    
   }
   .form {
 
@@ -79,7 +83,6 @@ body {
   
   .video-list {
     width: 75%;
-   
     margin: auto;
     text-align:left;
   }
@@ -89,5 +92,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     
+  }
+
+  #video-area {
+
+  }
+  #video-area2 {
+    
+  }
   }
   
