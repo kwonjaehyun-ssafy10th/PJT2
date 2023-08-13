@@ -78,3 +78,4 @@ videoList2.forEach((video)=> {
 
 document.querySelector("#video-area").innerHTML = videoHtml
 document.querySelector("#video-area2").innerHTML = videoHtml2
+
